@@ -5,20 +5,20 @@
 class Ecstop < Formula
   desc ""
   homepage ""
-  version "0.0.1-alpha4"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1-alpha4/ecstop_0.0.1-alpha4_Darwin_x86_64.tar.gz"
-      sha256 "b10256624a298bfd63703f9187a4a34c79fb3ea9f633979d26a5ac547a23eb3a"
+      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Darwin_x86_64.tar.gz"
+      sha256 "876131d999883f4e1c0992366dd7f6fdc6e38a192b4801f513c4dadaee0da21a"
 
       def install
         bin.install "ecstop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1-alpha4/ecstop_0.0.1-alpha4_Darwin_arm64.tar.gz"
-      sha256 "5f835aa81a554eba3410701d367f2ce47e5601a213c15d5ddf16f9be550e574e"
+      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Darwin_arm64.tar.gz"
+      sha256 "34cad4cdf0dc143b05a8c4d464cb3077057c154a3c4577d9784a74448dd27683"
 
       def install
         bin.install "ecstop"
@@ -29,8 +29,8 @@ class Ecstop < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1-alpha4/ecstop_0.0.1-alpha4_Linux_x86_64.tar.gz"
-        sha256 "2dec0f8e265acf0fd8662739f17eb27079d3795b532f75b35c93a4454f3fae13"
+        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Linux_x86_64.tar.gz"
+        sha256 "166c5669faae626890382d325a4327ed3db95aa3aa084a1856a16549a21ddf14"
 
         def install
           bin.install "ecstop"
@@ -39,8 +39,8 @@ class Ecstop < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1-alpha4/ecstop_0.0.1-alpha4_Linux_arm64.tar.gz"
-        sha256 "43d4ea480dae71f7d8b57a0a30971ede3c8570e0a53043ebe42c57fc5381e444"
+        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Linux_arm64.tar.gz"
+        sha256 "ed7c4219d839ba2409c9ec3de5cd424d98a57a70d22a8c46cde9bbca18f82a85"
 
         def install
           bin.install "ecstop"
