@@ -5,20 +5,20 @@
 class Ecstop < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "876131d999883f4e1c0992366dd7f6fdc6e38a192b4801f513c4dadaee0da21a"
+      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.2/ecstop_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "8b133e07bdff6b39a67bd6a38d705cf049324b48498e64c1c751a4a260ce4653"
 
       def install
         bin.install "ecstop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "34cad4cdf0dc143b05a8c4d464cb3077057c154a3c4577d9784a74448dd27683"
+      url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.2/ecstop_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "e7d036286ee566de6ff986f434462b8677d36732209defa9799d217b9bb384cb"
 
       def install
         bin.install "ecstop"
@@ -29,8 +29,8 @@ class Ecstop < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Linux_x86_64.tar.gz"
-        sha256 "166c5669faae626890382d325a4327ed3db95aa3aa084a1856a16549a21ddf14"
+        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.2/ecstop_0.0.2_Linux_x86_64.tar.gz"
+        sha256 "2e95663f618b6ae15b25527beb91e64e818dcbe0698124221a0f6794e66e4a11"
 
         def install
           bin.install "ecstop"
@@ -39,8 +39,8 @@ class Ecstop < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.1/ecstop_0.0.1_Linux_arm64.tar.gz"
-        sha256 "ed7c4219d839ba2409c9ec3de5cd424d98a57a70d22a8c46cde9bbca18f82a85"
+        url "https://github.com/t-kikuc/ecstop/releases/download/v0.0.2/ecstop_0.0.2_Linux_arm64.tar.gz"
+        sha256 "470b976fa38dfd2ed6685287edd302c4ac0cecd1fe68f46ee0ecf9fd3a5cfe6e"
 
         def install
           bin.install "ecstop"
